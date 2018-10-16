@@ -1,11 +1,34 @@
 <html>
-    <head>
-        <title>Cấu trúc trang HTML</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <h1>Bài 03: Cấu trúc của một trang HTML</h1>
-        <p>Một tập tin HTML được bắt đầu bằng thẻ html và kết thúc bằng thẻ /html</p>
-        <p>Bên trong thẻ html thường được chia làm hai cụm lớn: cụm head và cụm body</p>
-    </body>
+
+<head>
+    <title>Responsive Images!!L</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="size">Width:</div>
+    <div class="wrapper">
+        <h1>Responsive Images!!</h1>
+        <ul>
+            <li>
+                <h2>Grabbing photos by url</h2>
+
+                <figure>
+                    <picture>
+                        <source srcset="http://picsum.photos/1500" media="(min-width: 1200px)" />
+                        <source srcset="http://picsum.photos/1200" media="(min-width: 900px)" />
+                        <source srcset="http://picsum.photos/900" media="(min-width: 500px)" />
+                        <img src="http://picsum.photos/g/400" alt="hinh minh hoa">
+
+
+                    </picture>
+                </figure>
+                <figcaption>a really cool photo!</figcaption>
+            </li>
+        </ul>
+    </div>
+</body>
+
 </html>
